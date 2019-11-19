@@ -1,0 +1,32 @@
+- name: Yliopiston Taido
+  link: /
+- name: Aloita Taido
+  sub:
+  - name: Liity
+    link: /join.html
+  - name: Taido Core
+    link: /core.tml
+- name: Uutiset
+  link: /news.html
+- name: Blogi
+  link: /blog.html
+- name: Harjoitukset
+  sub:
+  - name: Harjoitusinfo
+    link: /training.html
+  - name: Kalenteri
+    link: /calendar.html
+- name: Seura
+  sub:
+  - name: Toimijat
+    link: /staff.html
+  - name: Tarina
+    link: /story.html
+  - name: Jäsenille
+    link: /member-info.html
+- name: Yhteystiedot
+  link: /contact.html
+- name: In English
+  link: /in-english.html
+- name: Treenipalaute
+  link: https://docs.google.com/forms/d/e/1FAIpQLSeavt737rOjXjYJOiOdQCKZ26zwVvseNiaYQzKOHVrkZqmoPQ/viewform
