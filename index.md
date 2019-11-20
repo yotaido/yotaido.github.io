@@ -6,8 +6,6 @@ layout: default
 title: Foobar
 ---
 
-Foobar
-======
-
 
 ASdsadasd
+

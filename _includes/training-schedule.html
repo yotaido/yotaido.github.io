@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+    <h5 class="card-title">Treeniajat</h5>
+        <div class="schedulebox">
+            {% for item in site.data.training-schedule %}
+            <div>
+                <div>{{ item.weekday }}</div>
+                <div>{{ item.start }} -- {{ item.end }}</div>
+                <div>{{ item.type }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

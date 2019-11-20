@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Viimeisimmät uutiset</h5>
+        <ul class="list-unstyled">
+
+            {% assign news_items = site.news_items | sort: 'date' | reverse %}
+            {% for item in news_items limit:5 %}
+            <li>
+                {{ item.date | date: "%-d.%-m.%Y" }}: 
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Viimeisimmät blogikirjoitukset</h5>
+        <ul class="list-unstyled">
+
+            {% assign blog_posts = site.blog_posts | sort: 'date' | reverse %}
+            {% for item in blog_posts limit:5 %}
+            <li>
+                {{ item.date | date: "%-d.%-m.%Y" }}: 
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

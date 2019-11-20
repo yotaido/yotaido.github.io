@@ -1,0 +1,10 @@
+---
+layout: default
+title: Uutiset
+---
+<ul>
+    {% assign news_items = site.news_items | sort: 'date' | reverse %}
+    {% for post in news_items %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,10 @@
+---
+layout: default
+title: Blogi
+---
+<ul>
+    {% assign blog_posts = site.blog_posts | sort: 'date' | reverse %}
+    {% for post in blog_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>

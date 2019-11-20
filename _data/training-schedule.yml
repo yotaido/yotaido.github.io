@@ -1,0 +1,16 @@
+- weekday: Ti
+  start: "20:30"
+  end: "22:00"
+  type: Core & Skills
+- weekday: Pe
+  start: "18:30"
+  end: "20:00"
+  type: Core & Skills
+- weekday: La
+  start: "15:30"
+  end: "17:00"
+  type: Vapaa
+- weekday: Su
+  start: "13:00"
+  end: "15:00"
+  type: Vapaa
