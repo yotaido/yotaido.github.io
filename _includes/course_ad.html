@@ -1,0 +1,13 @@
+{% if site.data.course_ad %}
+{% assign ad = site.data.course_ad %}
+<div>
+    <a href="{{ ad.image.link }}">
+        <figure>
+            <img id="core-ad-img" class="core-ad" src="{{site.baseurl}}/{{ad.image.source}}">
+            <figcaption>
+                {{ad.image.caption}}
+            </figcaption>
+        </figure>
+    </a>
+</div>
+{% endif %}

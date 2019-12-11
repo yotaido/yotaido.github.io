@@ -1,0 +1,18 @@
+<div class="black">
+    <div class="container">
+    <!--<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <p id="core-ad" class="video-caption">{{ad.message}}</p>
+        </div>
+    </div>-->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            {% assign ad = site.data.course_ad %}
+            <div class="video-container">
+                <iframe src="{{ ad.video.embed }}" frameborder="0" allowfullscreen></iframe>'
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
