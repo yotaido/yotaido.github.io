@@ -23,7 +23,7 @@ osa kamppailua.
 > tosissaan. Tavoitteena on, että harjoituksissa on aina
 > sopivasti haastetta kaikille taitotasosta riippumatta.
 > Tervetuloa mukaan! Katso lisätietoja 
-> [Taido Core -sivulta](/aloita-taido/taido-core)!**
+> [Taido Core -sivulta](/start_taido/core.html)!**
 
 
 

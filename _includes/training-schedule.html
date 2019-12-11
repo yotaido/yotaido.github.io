@@ -2,7 +2,7 @@
     <div class="card-body">
     <h5 class="card-title">Treeniajat</h5>
         <div class="schedulebox">
-            {% for item in site.data.training-schedule %}
+            {% for item in site.data.training-schedule.week_schedule %}
             <div>
                 <div>{{ item.weekday }}</div>
                 <div>{{ item.start }} – {{ item.end }}</div>

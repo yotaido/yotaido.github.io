@@ -3,9 +3,9 @@
 - name: Aloita Taido
   sub:
   - name: Liity
-    link: /join.html
+    link: /start_taido/join.html
   - name: Taido Core
-    link: /core.tml
+    link: /start_taido/core.html
 - name: Uutiset
   link: /news.html
 - name: Blogi
@@ -13,17 +13,17 @@
 - name: Harjoitukset
   sub:
   - name: Harjoitusinfo
-    link: /training.html
+    link: /training/info.html
   - name: Kalenteri
-    link: /calendar.html
+    link: /training/calendar.html
 - name: Seura
   sub:
   - name: Toimijat
-    link: /staff.html
+    link: /club/staff.html
   - name: Tarina
-    link: /story.html
+    link: /club/story.html
   - name: Jäsenille
-    link: /member-info.html
+    link: /club/member-info.html
 - name: Yhteystiedot
   link: /contact.html
 - name: In English

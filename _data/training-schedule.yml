@@ -1,3 +1,4 @@
+week_schedule:
 - weekday: Ti
   start: "20:30"
   end: "22:00"
@@ -14,3 +15,8 @@
   start: "13:00"
   end: "15:00"
   type: Vapaa
+course_starts:
+- weekday: Ti
+  datetime: 2019-10-15T20:30
+- weekday: Pe
+  datetime: 2019-11-19T18:30
