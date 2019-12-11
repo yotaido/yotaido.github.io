@@ -1,29 +1,31 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">{{ site.title }}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            {% for item in site.data.navigation %}
-            {% if item.sub %}
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ item.name }}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {% for subitem in item.sub %}
-                    <a class="dropdown-item{% if page.url == subitem.link %} active{% endif %}" href="{{ subitem.link }}">{{ subitem.name }}</a>
-                    {% endfor %}
-                </div>
-            </li>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">A
+    <div class="container">
+        <a class="navbar-brand" href="#">{{ site.title }}</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% for item in site.data.navigation %}
+                {% if item.sub %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ item.name }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for subitem in item.sub %}
+                        <a class="dropdown-item{% if page.url == subitem.link %} active{% endif %}" href="{{ subitem.link }}">{{ subitem.name }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
 
-            {% else %}
-            <li class="nav-item{% if page.url == item.link %} active{% endif %}">
-                <a class="nav-link" href="{{ item.link }}">{{ item.name }}{% if page.url == item.link %} <span class="sr-only">(current)</span>{% endif %}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
+                {% else %}
+                <li class="nav-item{% if page.url == item.link %} active{% endif %}">
+                    <a class="nav-link" href="{{ item.link }}">{{ item.name }}{% if page.url == item.link %} <span class="sr-only">(current)</span>{% endif %}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
 
+        </div>
     </div>
 </nav>
