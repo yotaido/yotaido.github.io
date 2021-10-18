@@ -20,3 +20,5 @@ fields:
   default: now
   config:
     required: true
+pages:
+- _blog_posts/testi-2.md
